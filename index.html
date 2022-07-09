@@ -12,7 +12,7 @@
 </head>
 <body>
 	
-	<header class="header section">
+	<header class="header section"  id="header">
 		<div class="container">
 			<div class="header-block">
 				<a href="" class="header-logo">
@@ -22,31 +22,31 @@
 						<p class="header-text__subtitle">АВТОНОМНАЯ НЕКОМЕРЧЕСКАЯ ОРГАНИЗАЦИЯ</p>
 					</div>
 				</a>
-
+				<nav class="menu-btn"></nav>
 				<div class="header-menu">
 					<nav class="header-menu__nav nav">
 						<ul class="nav-list">
 							<li class="nav-list__item">
-								<a href="#" class="nav-list__link">УСЛУГИ</a>
+								<a href="#service" class="nav-list__link">УСЛУГИ</a>
 							</li>
 							<li class="nav-list__item">
-								<a href="#" class="nav-list__link">ПРЕИМУЩЕСТВА</a>
+								<a href="#vantage" class="nav-list__link">ПРЕИМУЩЕСТВА</a>
 							</li>
 							<li class="nav-list__item">
-								<a href="#" class="nav-list__link">ОТЗЫВЫ</a>
+								<a href="#recall" class="nav-list__link">ОТЗЫВЫ</a>
 							</li>
 							<li class="nav-list__item">
-								<a href="#" class="nav-list__link">ВОПРОСЫ</a>
+								<a href="#faq" class="nav-list__link">ВОПРОСЫ</a>
 							</li>
 							<li class="nav-list__item">
-								<a href="#" class="nav-list__link">КОНТАКТЫ</a>
+								<a href="#footer" class="nav-list__link">КОНТАКТЫ</a>
 							</li>
 						</ul>
 					</nav>
 					
 					<a href="tel:+79170122186"  class="header-menu__button button">ПОЗВОНИТЬ</a>
 				</div>
-
+				
 				<div class="header-contacts">
 					<img src="img/phone.svg" alt="Трубка" class="header-contacts__image">
 					<a href="tel:+79170122186" class="header-contacts__tel">89170122186</a>
@@ -64,7 +64,7 @@
 						<h2 class="hero-title">#МЫДЛЯДОБРА</h2>
 						<div class="social">
 							<div class="social-taxi">
-								<p class="social-taxi__title">Социальное такси:</p>
+								<!-- <p class="social-taxi__title">Социальное такси:</p> -->
 								<ul class="social-taxi__list">
 									<li class="social-taxi__item">- перевозка лежачих больных</li>
 									<li class="social-taxi__item">- перевозка инвалидов</li>
@@ -83,7 +83,7 @@
 					</div>
 					<!-- /.hero-text -->
 					<div class="hero-video">
-						<img src="img/yotub.jpg" alt="" class="hero-video__image">
+						<iframe class="hero-video__frame" src="https://vk.com/video_ext.php?oid=-165564632&id=456239139&hash=1eb8b46b0030f658"  frameborder="0" allowfullscreen="1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>
 					</div>
 					<!-- /.hero-video -->
 				</div>
@@ -93,10 +93,10 @@
 		</section>
 		<!-- /.section hero -->
 
-		<section class="section service">
+		<section class="section service" id="service">
 			<div class="container">
 				<div class="service-block">
-					<h2 class="service-title">Список наших услуг</h2>
+					<h2 class="service-title">СПИСОК НАШИХ УСЛУГ</h2>
 					<ul class="service-list">
 						<li class="service-list__item">
 							<span class="service-list__number">01</span>
@@ -141,6 +141,64 @@
 							</div>
 						</li>
 					</ul>
+					<ul class="slaidservice-list slaider">
+						<div class="slaidservice-arrow slaidservice-prev">
+							<img src="img/past.svg" alt="" class="slaidservice-arrow__past">
+						</div>
+						<li class="slaidservice-list__item slaid">
+							<span class="slaidservice-list__number">01</span>
+							<div class="slaidservice-list__text">
+								<p class="slaidservice-list__text_title">Транспортировка из больницы домой</p>
+								<p class="slaidservice-list__text_subtitle">Заберём из больницы и привезём домой, “от кровати до кровати”</p>
+							</div>
+						</li>
+						<li class="slaidservice-list__item slaid">
+							<span class="slaidservice-list__number">02</span>
+							<div class="slaidservice-list__text">
+								<p class="slaidservice-list__text_title">Доставка в медицинское учреждение</p>
+								<p class="slaidservice-list__text_subtitle">Для диагностики, лечения или госпитализации</p>
+							</div>
+						</li>
+						<li class="slaidservice-list__item slaid">
+							<span class="slaidservice-list__number">03</span>
+							<div class="slaidservice-list__text">
+								<p class="slaidservice-list__text_title">Сопровождение и ожидание клиента</p>
+								<p class="slaidservice-list__text_subtitle">Заберём из дома, доставим до места и потом вернём назад</p>
+							</div>
+						</li>
+						<li class="slaidservice-list__item slaid">
+							<span class="slaidservice-list__number">04</span>
+							<div class="slaidservice-list__text">
+								<p class="slaidservice-list__text_title">Перевозка в любое место</p>
+								<p class="slaidservice-list__text_subtitle">На дачу, в гости, на турбазу, в кино или театр, по делам или для отдыха и развлечения</p>
+							</div>
+						</li>
+						<li class="slaidservice-list__item slaid">
+							<span class="slaidservice-list__number">05</span>
+							<div class="slaidservice-list__text">
+								<p class="slaidservice-list__text_title">Организация трансфера</p>
+								<p class="slaidservice-list__text_subtitle">Встреча или доставка на вокзал, в аэропорт, в том числе лежачих больных</p>
+							</div>
+						</li>
+						<li class="slaidservice-list__item slaid">
+							<span class="slaidservice-list__number">06</span>
+							<div class="slaidservice-list__text">
+								<p class="slaidservice-list__text_title">Организация сложных маршрутов</p>
+								<p class="slaidservice-list__text_subtitle">Организация и выполнение дальних перевозок по Самарской области и в другие города России</p>
+							</div>
+						</li>
+						<div class="slaidservice-arrow slaidservice-next">
+							<img src="img/next.svg" alt="" class="slaidservice-arrow__next">
+						</div>
+					</ul>
+					<!-- <div class="number-slide">
+						<div class="number-slide__ordinal"></div>
+						<div class="number-slide__ordinal"></div>
+						<div class="number-slide__ordinal"></div>
+						<div class="number-slide__ordinal"></div>
+						<div class="number-slide__ordinal"></div>
+						<div class="number-slide__ordinal"></div>
+					</div> -->
 					<div class="service-contacts">
 						<p class="service-contacts__text">Позвоните по телефону, чтобы оставить заявку на перевозку и обговорить все детали</p>
 						<a href="tel:+79170122186" class="service-contacts__button button">ПОЗВОНИТЬ</a>
@@ -152,7 +210,7 @@
 		</section>
 		<!-- /.section service -->
 
-		<section class="section vantage">
+		<section class="section vantage" id="vantage">
 			<div class="container">
 				<div class="vantage-block">
 					<h2 class="vantage-title">ПОЧЕМУ СТОИТ ВЫБРАТЬ ИМЕННО НАС</h2>
@@ -201,6 +259,59 @@
 							</div>
 						</li>
 					</ul>
+
+					<!-- слайдер -->
+					<ul class="vantage-list vantage-slide">
+						<div class="slaidservice-arrow slaidservice-prev1">
+							<img src="img/past1.svg" alt="" class="slaidservice-arrow__past">
+						</div>
+						<li class="vantage-list__item vantage-slider">
+							<img src="img/icon1.svg" alt="" class="vantage-list__image">
+							<div class="vantage-list__text">
+								<p class="vantage-list__text_title">ПЕРЕВОЗКА “ОТ КРОВАТИ ДО КРОВАТИ”</p>
+								<p class="vantage-list__text_subtitle">Поможем спуститься с этажа, посадим в машину, доставим до места, поможем
+									поняться на этаж</p>
+							</div>
+						</li>
+						<li class="vantage-list__item vantage-slider">
+							<img src="img/icon2.svg" alt="" class="vantage-list__image">
+							<div class="vantage-list__text">
+								<p class="vantage-list__text_title">ПОДАЧА АВТОМОБИЛЯ ВОВРЕМЯ</p>
+								<p class="vantage-list__text_subtitle">При оформлении заявки не менее, чем за сутки, мы приезжаем ровно к тому времени, которое вы заказали</p>
+							</div>
+						</li>
+						<li class="vantage-list__item vantage-slider">
+							<img src="img/icon3.svg" alt="" class="vantage-list__image">
+							<div class="vantage-list__text">
+								<p class="vantage-list__text_title">ЗАБОТЛИВЫЙ ПЕРСОНАЛ</p>
+								<p class="vantage-list__text_subtitle">У нас большой опыт работы и огромное желание помогать. Наши клиенты становятся нашими друзьями</p>
+							</div>
+						</li>
+						<li class="vantage-list__item vantage-slider">
+							<img src="img/icon4.svg" alt="" class="vantage-list__image">
+							<div class="vantage-list__text">
+								<p class="vantage-list__text_title">ОБОРУДОВАННЫЙ ТРАНСПОРТ</p>
+								<p class="vantage-list__text_subtitle">Приёмное устройство, каталка для лежачих больных, носилки, кресельные носилки, место для сопровождающего</p>
+							</div>
+						</li>
+						<li class="vantage-list__item vantage-slider">
+							<img src="img/icon5.svg" alt="" class="vantage-list__image">
+							<div class="vantage-list__text">
+								<p class="vantage-list__text_title">БЕЗ ОФОРМЛЕНИЯ ДОКУМЕНТОВ</p>
+								<p class="vantage-list__text_subtitle">Чтобы воспользоваться нашей услугой, не требуется собирать и оформлять какие-либо документы</p>
+							</div>
+						</li>
+						<li class="vantage-list__item vantage-slider">
+							<img src="img/icon6.svg" alt="" class="vantage-list__image">
+							<div class="vantage-list__text">
+								<p class="vantage-list__text_title">НЕ ЗАРАБАТЫВАЕМ НА КЛИЕНТАХ</p>
+								<p class="vantage-list__text_subtitle">Наша цель не бизнес, а помощь людям. Поэтому услуги перевозки предоставляем бесплатно или за небольшую плату</p>
+							</div>
+						</li>
+						<div class="slaidservice-arrow slaidservice-next1">
+							<img src="img/next1.svg" alt="" class="slaidservice-arrow__next">
+						</div>
+					</ul>
 					<div class="service-contacts">
 						<p class="service-contacts__text">Позвоните по телефону, чтобы оставить заявку на перевозку и обговорить все детали</p>
 						<a href="tel:+79170122186" class="service-contacts__button button">ПОЗВОНИТЬ</a>
@@ -243,13 +354,50 @@
 						<img src="img/image9.jpg" alt="" class="card-photo__image">
 					</div>
 				</div>
+				<!-- слайд -->
+				<div class="card-block card-slader">
+					<div class="slaidservice-arrow slaidservice-prev2">
+						<img src="img/past1.svg" alt="" class="slaidservice-arrow__past">
+					</div>	
+					<div class="card-photo card-slader__slaide">
+						<img src="img/image1.jpg" alt="" class="card-photo__image">
+					</div>
+					<div class="card-photo card-slader__slaide">
+						<img src="img/image2.jpg" alt="" class="card-photo__image">
+					</div>
+					<div class="card-photo card-slader__slaide">
+						<img src="img/image3.jpg" alt="" class="card-photo__image">
+					</div>
+					<div class="card-photo card-slader__slaide">
+						<img src="img/image4.jpg" alt="" class="card-photo__image">
+					</div>
+					<div class="card-photo card-slader__slaide">
+						<img src="img/image5.jpg" alt="" class="card-photo__image">
+					</div>
+					<div class="card-photo card-slader__slaide">
+						<img src="img/image6.jpg" alt="" class="card-photo__image">
+					</div>
+					<div class="card-photo card-slader__slaide">
+						<img src="img/image7.jpg" alt="" class="card-photo__image">
+					</div>
+					<div class="card-photo card-slader__slaide">
+						<img src="img/image8.jpg" alt="" class="card-photo__image">
+					</div>
+					<div class="card-photo card-slader__slaide">
+						<img src="img/image9.jpg" alt="" class="card-photo__image">
+					</div>
+					<div class="slaidservice-arrow slaidservice-next2">
+						<img src="img/next1.svg" alt="" class="slaidservice-arrow__next">
+					</div>
+				</div>
+
 				<!-- /.card-block -->
 			</div>
 			<!-- /.container -->
 		</section>
 		<!-- /.section card -->
 
-		<section class="section recall">
+		<section class="section recall" id="recall">
 			<div class="container">
 				<div class="recall-block">
 					<ul class="recall-list">
@@ -285,6 +433,46 @@
 							</div>
 						</li>
 					</ul>
+					<!-- слайдер -->
+					<ul class="recall-list recall-slaider">
+						<div class="slaidservice-arrow slaidservice-prev3">
+							<img src="img/past.svg" alt="" class="slaidservice-arrow__past">
+						</div>
+						<li class="recall-list__item recall-slaider__slaide">
+							<img src="img/inga.png" alt="" class="recall-list__image">
+							<div class="recall-list__text">
+								<p class="recall-list__text_title">Инга Малинина</p>
+								<p class="recall-list__text_subtitle">Спасибо за то, что вы есть, такая организация, люди готовые прийти на помощь даже автомобиль,  что бы помочь деткам которые сами не могут передвигаться доехать до места лечения. Спасибо вам огромное</p>
+							</div>
+						</li>
+						<li class="recall-list__item recall-slaider__slaide">
+							<img src="img/alex.png" alt="" class="recall-list__image">
+							<div class="recall-list__text">
+								<p class="recall-list__text_title">Алексей Волков</p>
+								<p class="recall-list__text_subtitle">АЛЛИЛУЙЯ!
+									Слава Господу за тех кто не обходит чужие проблемы, а наоборот рвётся в бой за их устранения.
+									Благослови вас Бог изобилием</p>
+							</div>
+						</li>
+						<li class="recall-list__item recall-slaider__slaide">
+							<img src="img/inga.png" alt="" class="recall-list__image">
+							<div class="recall-list__text">
+								<p class="recall-list__text_title">Инга Малинина</p>
+								<p class="recall-list__text_subtitle">Были в поликлинике, увидела маму с сыном инвалидом на коляске, рассказала о Точке Опоры и о том, что вы помогаете таким деткам в бесплатных перевозках, мама с удовольствием взяла ваш номер телефона </p>
+							</div>
+						</li>
+						<li class="recall-list__item recall-slaider__slaide">
+							<img src="img/ecat.png" alt="" class="recall-list__image">
+							<div class="recall-list__text">
+								<p class="recall-list__text_title">Екатерина Никонорова</p>
+								<p class="recall-list__text_subtitle">Спасибо вам! Хорошо что есть ещё люди с добрым сердцем и отзывчивой
+									душой</p>
+							</div>
+						</li>
+						<div class="slaidservice-arrow slaidservice-next3">
+							<img src="img/next.svg" alt="" class="slaidservice-arrow__next">
+						</div>
+					</ul>
 				</div>
 				<!-- /.recall-block -->
 			</div>
@@ -292,7 +480,7 @@
 		</section>
 		<!-- /.section recall -->
 
-		<section class="section faq">
+		<section class="section faq" id="faq">
 			<div class="container">
 				<div class="faq-block">
 					<h2 class="faq-title">ОТВЕЧАЕМ НА ЧАСТЫЕ ВОПРОСЫ</h2>
@@ -371,7 +559,7 @@
 	</main>
 
 
-	<footer class="footer">
+	<footer class="footer" id="footer">
 		<div class="container">
 			<div class="footer-block">
 				<h2 class="footer-title">НАШИ КОНТАКТЫ</h2>
@@ -380,7 +568,7 @@
 						<a href="" class="footer-contacts__link">
 							<img src="img/arrow2.svg" alt="" class="footer-contacts__icon">
 						</a>
-						<span class="footer-contacts__text">Наверх страницы</span>
+						<span class="footer-contacts__text" id="header">Наверх страницы</span>
 					</div>
 					<div class="footer-contacts__block">
 						<img src="img/phone.svg" alt="" class="footer-contacts__icon">
