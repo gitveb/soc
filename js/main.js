@@ -168,4 +168,50 @@ window.addEventListener('DOMContentLoaded', () => {
 		plusSlides3(1);
 	});
 
+
+
+	// 3) модальное окно
+
+	const modalTrigger = document.querySelectorAll('[data-modal]'),
+		modal = document.querySelector('.modal');
+
+	// функция для окрытия окна
+	function openModal() {
+		modal.classList.add('show');
+		modal.classList.remove('hide');
+		// modal.classList.toggle('show');
+		document.body.style.overflow = 'hidden';
+		// если пользователь сам открыл окно, то чтобы не сработал таймер открытия
+		clearInterval(modalTimerId);
+	}
+
+	// открытие окна по клику на кнопку
+	modalTrigger.forEach(btn => {
+		btn.addEventListener('click', openModal);
+	});
+
+	// зыкрыть окно по клику на крестик
+	function closeModal() {
+		modal.classList.add('hide');
+		modal.classList.remove('show');
+		// modal.classList.toggle('show');
+		document.body.style.overflow = '';
+	}
+
+
+
+	// закрытие окна по клику на поджложку
+	modal.addEventListener('click', (e) => {
+		if (e.target === modal || e.target.getAttribute('data-close') == '') {
+			closeModal();
+		}
+	});
+
+	// закрытие окна на клавишу Esc
+	document.addEventListener('keydown', (e) => {
+		if (e.code === "Escape" && modal.classList.contains('show')) {
+			closeModal();
+		}
+	});
+
 });

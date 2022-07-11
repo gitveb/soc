@@ -193,7 +193,7 @@ img {
 
 .nav-list__link {
   font-family: Roboto Mono;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
@@ -346,7 +346,7 @@ img {
 
 @media (max-width: 710px) {
   .header-block {
-    padding: 13px 16px;
+    padding: 13px 5px;
   }
   .header-logo {
     max-width: 178px;
@@ -439,23 +439,38 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 25px;
+}
+
+.hero-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 454px;
+  max-width: 519px;
 }
 
 .hero-title {
   font-size: 45px;
   font-weight: 600;
   line-height: 44px;
-  margin-bottom: 24px;
+  margin-bottom: 50px;
 }
 
 .hero-video__frame {
   width: 690px;
-  height: 495px;
+  height: 454px;
 }
 
 .social-taxi {
-  margin-bottom: 33px;
+  margin-bottom: 45px;
 }
 
 .social-taxi:last-child {
@@ -466,7 +481,7 @@ img {
   font-size: 30px;
   font-weight: 600;
   line-height: 29px;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 
 .social-taxi__item {
@@ -493,7 +508,7 @@ img {
 
 @media (max-width: 710px) {
   .hero {
-    padding: 19px 16px;
+    padding: 19px 5px;
   }
   .hero-video {
     margin-bottom: 27px;
@@ -731,7 +746,7 @@ img {
 
 @media (max-width: 710px) {
   .service-block {
-    padding: 13px 16px;
+    padding: 13px 5px;
   }
   .service-title {
     font-size: 20px;
@@ -892,7 +907,7 @@ img {
 
 @media (max-width: 710px) {
   .vantage-block {
-    padding: 13px 16px;
+    padding: 13px 5px;
   }
   .vantage-title {
     font-size: 20px;
@@ -994,7 +1009,7 @@ img {
 
 @media (max-width: 710px) {
   .card-block {
-    padding: 13px 16px;
+    padding: 13px 5px;
   }
   .card-photo {
     margin-bottom: 0;
@@ -1085,7 +1100,7 @@ img {
 
 @media (max-width: 710px) {
   .recall-block {
-    padding: 20px 16px;
+    padding: 20px 5px;
   }
   .recall-list {
     -webkit-box-align: center;
@@ -1213,7 +1228,7 @@ img {
 
 @media (max-width: 710px) {
   .faq-block {
-    padding: 13px 16px;
+    padding: 13px 5px;
   }
   .faq-title {
     font-size: 20px;
@@ -1237,7 +1252,7 @@ img {
     font-size: 15px;
     line-height: 15px;
     letter-spacing: -0.035em;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -1300,7 +1315,7 @@ img {
 
 @media (max-width: 1240px) {
   .footer-block {
-    padding: 21px 20px;
+    padding: 21px 5px;
   }
   .footer-title {
     font-size: 32px;
