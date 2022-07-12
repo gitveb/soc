@@ -63,6 +63,10 @@ img {
   display: none;
 }
 
+.block__contacts {
+  display: none;
+}
+
 @media (max-width: 1240px) {
   .container {
     max-width: 768px;
@@ -72,6 +76,20 @@ img {
     width: 22px;
     height: 35px;
     cursor: pointer;
+  }
+  .block__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  a.block__contacts_color {
+    color: #FFFCFC;
   }
 }
 
@@ -370,24 +388,11 @@ img {
     top: 139px;
   }
   .header-menu__button {
-    margin-bottom: 11px;
     width: 100%;
     max-width: 143px;
   }
   .header-contacts {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .header-contacts__image {
-    width: 33px;
-    height: 33px;
-  }
-  .header-contacts__tel {
-    font-size: 20px;
-    line-height: 20px;
-    letter-spacing: 0em;
+    display: none;
   }
   .menu-btn {
     max-width: 30px;
@@ -395,7 +400,7 @@ img {
     height: 4px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   .menu-btn:before {
     content: '';
@@ -660,6 +665,9 @@ img {
   .service-list {
     display: none;
   }
+  .service-contacts__button {
+    display: none;
+  }
   .slaidservice-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -849,7 +857,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 564px;
+  max-width: 568px;
   width: 100%;
   border: 6px solid #B63F21;
   border-radius: 57px;
