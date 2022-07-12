@@ -64,7 +64,19 @@ img {
 }
 
 .block__contacts {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a.block__contacts_color {
+  color: #FFFCFC;
 }
 
 @media (max-width: 1240px) {
@@ -78,18 +90,7 @@ img {
     cursor: pointer;
   }
   .block__contacts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  a.block__contacts_color {
-    color: #FFFCFC;
+    display: none;
   }
 }
 
@@ -385,7 +386,7 @@ img {
     letter-spacing: 0em;
   }
   .header-menu__active {
-    top: 139px;
+    top: 95px;
   }
   .header-menu__button {
     width: 100%;
@@ -514,6 +515,9 @@ img {
 @media (max-width: 710px) {
   .hero {
     padding: 19px 5px;
+  }
+  .hero-social {
+    max-height: 300px;
   }
   .hero-video {
     margin-bottom: 27px;
@@ -647,6 +651,10 @@ img {
   margin-bottom: 57px;
 }
 
+.service-contacts__button {
+  display: none;
+}
+
 .slaidservice-list {
   display: none;
 }
@@ -666,7 +674,7 @@ img {
     display: none;
   }
   .service-contacts__button {
-    display: none;
+    display: block;
   }
   .slaidservice-list {
     display: -webkit-box;
