@@ -302,6 +302,7 @@ a.block__contacts_color {
   }
   .header-menu {
     max-width: 176px;
+    margin-left: 100px;
   }
   .header-menu__button {
     display: block;
@@ -323,9 +324,6 @@ a.block__contacts_color {
             justify-content: center;
     right: 0;
     top: 155px;
-  }
-  .header-menu__button {
-    margin-left: 75px;
   }
   .header-contacts__image {
     width: 36px;
@@ -401,12 +399,15 @@ a.block__contacts_color {
             align-items: center;
     width: 100%;
     max-width: 320px;
+    margin: auto;
+  }
+  .header-menu__nav {
+    padding: 10px 0;
   }
   .header-menu__active {
     top: 87px;
   }
   .header-menu__button {
-    margin: auto;
     font-family: Roboto Flex;
     font-size: 10px;
     line-height: 10px;
@@ -415,6 +416,12 @@ a.block__contacts_color {
   }
   .header-contacts {
     display: none;
+  }
+  .nav-list__link {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 10px;
+    letter-spacing: -0.035em;
   }
   .menu-btn {
     max-width: 30px;
