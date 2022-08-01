@@ -169,6 +169,148 @@ window.addEventListener('DOMContentLoaded', () => {
 	});
 
 
+	// комментарии
+
+	// const movieDB = {
+	// 	movies: []
+	// };
+
+	// const addForm = document.querySelector('.commet'),
+	// 	addInput = addForm.querySelector('.commet-block__input'),
+	// 	addInput2 = document.querySelector('.commet-block__input2'),
+	// 	recall = document.querySelector('.recall-list');
+
+	// addForm.addEventListener('submit', (event) => {
+	// 	event.preventDefault();
+
+	// 	const newCommet = addInput.value;
+	// 	// const newCommet2 = addInput2.value;
+
+	// 	movieDB.movies.push(newCommet);
+	// 	// recall.movies.push(newCommet2);
+	// 	createMovieList(movieDB.movies, recall);
+
+	// 	event.target.reset();
+	// });
+
+	// function createMovieList(films, parent) {
+	// 	// отчистка содержимого родителя
+	// 	parent.innerHTML = "";
+	// 	films.forEach((commet) => {
+	// 		parent.innerHTML += `
+	// 		<li class="recall-list__item recall-slaider__slaide">
+	// 			<div class="recall-list__text">
+	// 				<p class="recall-list__text_title">${commet}</p>
+	// 			</div>
+	// 		</li>
+	// 	`;
+	// 	});
+	// }
+	// createMovieList(movieDB.movies, recall);
+
+
+	// let comments = [];
+	// loadComments();
+
+	// document.querySelector('.commet-button').onclick = function () {
+	// 	event.preventDefault();
+
+	// 	let commentName = document.querySelector('.commet-block__input');
+	// 	let commentBody = document.querySelector('.commet-block__input2');
+
+
+	// 	let comment = {
+	// 		name: commentName.value,
+	// 		body: commentBody.value
+	// 	};
+
+	// 	console.log(comment);
+
+	// 	commentName.value = '';
+	// 	commentBody.value = '';
+
+	// 	comments.push(comment);
+
+	// 	saveComments();
+	// 	showComments();
+	// };
+
+	// function saveComments() {
+	// 	localStorage.setItem('comments', JSON.stringify(comments));
+	// }
+
+	// function loadComments() {
+	// 	if (localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
+	// 	localStorage.clear();
+
+	// 	showComments();
+	// }
+
+	// function showComments() {
+	// 	let commentField = document.querySelector('.recall-list');
+	// 	let out = '';
+	// 	comments.forEach(function (item) {
+	// 		out += `
+	// 		<li class="recall-list__item recall-slaider__slaide">
+	// 			<div class="recall-list__text">
+	// 				<p class="recall-list__text_title">${item.name}</p>
+	// 				<p class="recall-list__text_subtitle">${item.body}</p>
+	// 			</div>
+	// 		</li>`;
+
+	// out += `<p class="recall-list__text_title">${item.name}</p>`;
+	// out += `<p class="recall-list__text_subtitle">${item.body}</p>`;
+	// 	});
+	// 	commentField.innerHTML = out;
+	// }
+
+
+	// let comments = [];
+	// loadComments();
+
+	// document.getElementById('comment-add').onclick = function () {
+
+	// 	let commentName = document.getElementById('comment-name');
+	// 	let commentBody = document.getElementById('comment-body');
+
+	// 	let comment = {
+	// 		name: commentName.value,
+	// 		body: commentBody.value
+	// 	};
+
+	// 	commentName.value = '';
+	// 	commentBody.value = '';
+
+	// 	comments.push(comment);
+
+	// 	saveComments();
+	// 	showComments();
+	// };
+
+	// function saveComments() {
+	// 	localStorage.setItem('comments', JSON.stringify(comments));
+	// }
+
+	// function loadComments() {
+	// 	if (localStorage.getItem('comments')) comments = JSON.parse(localStorage.getItem('comments'));
+	// 	localStorage.clear();
+
+	// 	showComments();
+	// }
+
+	// function showComments() {
+	// 	let commentField = document.getElementById('comment-field');
+	// 	let out = '';
+	// 	comments.forEach(function (item) {
+	// 		out += `<p class="recall-list__text_title">${item.name}</p>`;
+	// 		out += `<p class="recall-list__text_subtitle">${item.body}</p>`;
+	// 	});
+	// 	commentField.innerHTML = out;
+	// }
+
+
+
+
 
 	// // 3) модальное окно
 
